@@ -1,5 +1,5 @@
-#CUDA-powered LASER Docker
-
+# CUDA-powered LASER Docker
+## Usage
 The docker image can be built using the dbuild.sh script. The Docker image will have the tag _laser/bitext_
 
 ```
@@ -15,8 +15,6 @@ This means that if you want to align a German-English file pair the input will b
 Beware that only the bitexts will be saved to the output directory. If you want the embeddings to persist, you have to bind a host volume to the root directory /embeddings.
 
 
-###Some dependencies are not met at this point:
+### Some dependencies are not met at this point:
 
-transliterate 1.10.2, only used for Greek (pip install transliterate)
-jieba 0.39, Chinese segmenter (pip install jieba)
 mecab 0.996, Japanese segmenter
